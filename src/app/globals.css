@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* design-spec.md のデザイントークンを Tailwind v4 のテーマに登録 */
+@theme {
+  --color-ink: #1a1a1a;
+  --color-cream: #f7f3ec;
+  --color-accent: #e08a3c;
+  --color-accent-soft: #f0d8b8;
+  --color-soldout: #9ca3af;
+
+  --font-display: "League Gothic", sans-serif;
+  --font-jp: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+}
+
+/* 署名モチーフ: League Gothic の英語ラベルは少しトラッキングを開ける */
+.font-display {
+  letter-spacing: 0.04em;
+}
